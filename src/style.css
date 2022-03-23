@@ -1,0 +1,101 @@
+:root {
+  /* white color */
+  --color-white: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+
+.intro {
+  background-image: url('./pizza-background.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+}
+
+.nav-bar {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40vw;
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+}
+
+.description {
+  position: relative;
+  left: 20%;
+  top: 20%;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.description > p:last-child {
+  width: 30vw;
+  line-height: 1.5rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--color-white);
+  padding: 0.5rem;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin: 2rem;
+}
+
+.pizza {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed black;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.nav-bar > img {
+  max-width: 100px;
+}
+
+footer {
+  background-color: black;
+  color: var(--color-white);
+  /* padding: 1rem; */
+  /* text-align: center; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

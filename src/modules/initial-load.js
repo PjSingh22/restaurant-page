@@ -24,10 +24,7 @@ const footer = () => {
 };
 
 const initialLoad = () => {
-  const element = document.getElementById('content');
-  element.innerHTML += header();
-  element.innerHTML += footer();
-  return element;
+  
 };
 
-export default initialLoad;
+export { header, footer };

@@ -8,50 +8,64 @@
   padding: 0;
 }
 
+body {
+  background-image: url('./wood-background.jpg');
+  background-size: cover;
+}
+
 #content {
   display: grid;
   grid-template-columns: 1fr;
   min-height: 100vh;
+  color: var(--color-white);
 }
 
 .intro {
-  background-image: url('./pizza-background.png');
-  background-size: cover;
   background-position: center;
   min-height: 50vh;
 }
 
+.title {
+  font-size: 1rem;
+  text-align: center;
+  padding: 20px;
+}
+
 .nav-bar {
   display: flex;
+  flex-direction: column;
   width: 100vw;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
 }
 
 .links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
   align-items: center;
-  width: 40vw;
+  justify-content: center;
   font-size: 1.5rem;
   /* font-weight: bold; */
 }
 
-.description {
-  position: relative;
-  left: 20%;
-  top: 20%;
-  color: var(--color-white);
+.landing-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
   text-align: center;
 }
 
-.description > p:last-child {
-  width: 30vw;
-  line-height: 1.5rem;
+.landing-info > .about {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.description {
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .title {
@@ -91,11 +105,34 @@ a {
 
 footer {
   background-color: black;
-  color: var(--color-white);
-  /* padding: 1rem; */
-  /* text-align: center; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  align-self: flex-end;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+footer > a {
+  text-decoration: none;
+}
+
+/* media query for desktop */
+@media (min-width: 992px) {
+  .description {
+    width: 50%;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 688px) {
+  .landing-info > .about {
+    font-size: 3rem;
+    padding: 20px;
+  }
+  .description {
+    width: 70%;
+    font-size: 3rem;
+  }
 }

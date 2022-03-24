@@ -45,26 +45,23 @@ body {
   grid-gap: 3rem;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   /* font-weight: bold; */
 }
 
 .landing-info {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.info {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
   gap: 1rem;
-  text-align: center;
-}
-
-.landing-info > .about {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.description {
-  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -120,19 +117,61 @@ footer > a {
 
 /* media query for desktop */
 @media (min-width: 992px) {
+  .about {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  /*  */
+  
+  .description {
+    font-size: 1.2rem;
+    text-align: center;
+  }
   .description {
     width: 50%;
     font-size: 3rem;
   }
 }
 
-@media (min-width: 688px) {
-  .landing-info > .about {
+@media (min-width: 688px) and (max-width: 992px) {
+  .landing-info {
+    flex-direction: column-reverse;
+  }
+  .landing-info > img {
+    max-width: 300px;
+    margin-top: 40px;
+  }
+  .about {
     font-size: 3rem;
     padding: 20px;
   }
   .description {
     width: 70%;
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 687px) {
+
+  .links {
+    grid-gap: none;
+    font-size: 1.5rem;
+  }
+  .landing-info {
+    flex-direction: column;
+  }
+  .landing-info > img {
+    max-width: 240px;
+    margin-top: 40px;
+  }
+  .about {
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+  .description {
+    width: 70%;
+    font-size: 1.5rem;
   }
 }

@@ -31,4 +31,4 @@ function buttonListeners() {
   contactBtn.addEventListener('click', () => {
     mainContent.innerHTML = contact();
   });
-}l
+}

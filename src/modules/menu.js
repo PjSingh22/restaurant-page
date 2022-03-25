@@ -1,4 +1,4 @@
-// import fancyPants from '../fancy-pants.jpg';
+import fancyPants from '../fancy-pants.jpg';
 import orangeTang from '../orange-tang.jpg';
 import surpriseMe from '../surprise-me.jpg';
 import sushiPlatter from '../sushi-platter.jpg';
@@ -10,6 +10,7 @@ const menu = () => {
     <h2 class="about page-title">Menu</h2>
     <div class="menu-items">
       <div class="item fancyPants">
+        <img src="${fancyPants}" alt="fancy pants sushi" srcset="" class="item-img">
         <p class="item-name">Fancy Pants</p>
       </div>
       <div class="item">

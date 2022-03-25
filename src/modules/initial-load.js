@@ -1,3 +1,5 @@
+import githubLogo from '../github.png';
+
 const header = () => {
   return `
   <nav class="nav-bar">
@@ -16,7 +18,7 @@ const footer = () => {
   <footer>
     <p>By Prabhjot Singh</p>
     <a href="https://github.com/BATMANGOO/restaurant-page" target="_blank">
-      <img src="../src/github.png" alt="github logo" srcset="" class="github-logo">
+      <img src="${githubLogo}" alt="github logo" srcset="" class="github-logo">
     </a>
   </footer>
   `

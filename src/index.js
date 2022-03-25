@@ -11,6 +11,7 @@ function init() {
   element.innerHTML += header()
   element.innerHTML += home();
   element.innerHTML += footer();
+  buttonListeners();
 }
 
 init();
@@ -30,6 +31,4 @@ function buttonListeners() {
   contactBtn.addEventListener('click', () => {
     mainContent.innerHTML = contact();
   });
-}
-
-buttonListeners();
+}l

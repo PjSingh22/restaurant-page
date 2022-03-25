@@ -118,12 +118,32 @@ button {
   font-weight: bold;
 }
 
+.item {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.item > p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 10px;
+}
+
 .item > img {
   width: 200px;
 }
 
 .about {
   text-decoration: underline;
+}
+
+.fancyPants {
+  background-image: url("./fancy-pants.jpg");
+  background-size: cover;
 }
 
 

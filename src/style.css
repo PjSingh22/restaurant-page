@@ -16,6 +16,7 @@ body {
 #content {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
   min-height: 100vh;
   color: var(--color-white);
 }
@@ -56,6 +57,12 @@ body {
   padding: 20px;
 }
 
+.menu-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .info {
   display: flex;
   flex-direction: column;
@@ -81,22 +88,43 @@ button {
   cursor: pointer;
 }
 
-.menu-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  margin: 2rem;
-}
-
-.pizza {
+.contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px dashed black;
-  padding: 20px;
-  border-radius: 5px;
+  gap: 1rem;
   text-align: center;
+}
+
+.contact-info > p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 40px;
+  justify-content: center;
+  width: 100vw;
+  justify-content: center;
+}
+
+.item-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.item > img {
+  width: 200px;
+}
+
+.about {
+  text-decoration: underline;
 }
 
 
@@ -116,9 +144,7 @@ footer {
 }
 
 footer > a {
-  text-decoration: none;
-  color: var(--color-white);
-  padding: 0.5rem;
+  margin-left: 10px;
 }
 
 /* media query for desktop */

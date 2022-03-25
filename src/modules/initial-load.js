@@ -15,16 +15,11 @@ const footer = () => {
   return `
   <footer>
     <p>By Prabhjot Singh</p>
-    <a href="http://">
-      Link
-      <img src="" alt="">
+    <a href="https://github.com/BATMANGOO/restaurant-page" target="_blank">
+      <img src="../src/github.png" alt="github logo" srcset="" class="github-logo">
     </a>
   </footer>
   `
-};
-
-const initialLoad = () => {
-  
 };
 
 export { header, footer };

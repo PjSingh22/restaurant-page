@@ -103,13 +103,13 @@ button {
 .menu-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   text-align: center;
   align-items: center;
   padding: 20px;
   margin-top: 40px;
   justify-content: center;
-  width: 100vw;
+  /* width: 100vw; */
   justify-content: center;
 }
 
@@ -130,12 +130,12 @@ button {
   font-size: 1.5rem;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.8);
-  width: 200px;
+  /* width: 200px; */
   padding: 10px;
 }
 
 .item > img {
-  width: 200px;
+  /* width: 200px; */
 }
 
 .about {
@@ -217,5 +217,9 @@ footer > a {
   .description {
     width: 70%;
     font-size: 1.5rem;
+  }
+  
+  .menu-items {
+    gap: 4rem;
   }
 }

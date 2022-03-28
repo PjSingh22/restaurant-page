@@ -9,7 +9,7 @@ const menu = () => {
   <div class="menu-info">
     <h2 class="about page-title">Menu</h2>
     <div class="menu-items">
-      <div class="item fancyPants">
+      <div class="item">
         <img src="${fancyPants}" alt="fancy pants sushi" srcset="" class="item-img">
         <p class="item-name">Fancy Pants</p>
       </div>
